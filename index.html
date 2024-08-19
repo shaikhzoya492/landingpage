@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Landing Page using HTML, CSS & Javascript</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- ==== ANIMATE ON SCROLL CSS CDN  ==== -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ==== HEADER ==== -->
+    <header class="container header">
+      <!-- ==== NAVBAR ==== -->
+      <nav class="nav">
+        <div class="logo">
+          <h2>Foodking </h2>
+        </div>
+
+        <div class="nav_menu" id="nav_menu">
+          <button class="close_btn" id="close_btn">
+            <i class="ri-close-fill"></i>
+          </button>
+
+          <ul class="nav_menu_list">
+            <li class="nav_menu_item">
+              <a href="#" class="nav_menu_link">account</a>
+            </li>
+            <li class="nav_menu_item">
+              <a href="#" class="nav_menu_link">about</a>
+            </li>
+            <li class="nav_menu_item">
+              <a href="#" class="nav_menu_link">service</a>
+            </li>
+            <li class="nav_menu_item">
+              <a href="#" class="nav_menu_link">contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <button class="toggle_btn" id="toggle_btn">
+          <i class="ri-menu-line"></i>
+        </button>
+      </nav>
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="grid-cols-2">
+          <div class="grid-item-1">
+            <h1 class="main-heading">
+              Welcome to <span>Foodking.</span>
+              <br />
+              Fast Food Restaurant.
+            </h1>
+            <p class="info-text">
+              CRISPY, EVERY BITE TASTE
+              POPULAR FOOD ITEMS.
+            </p>
+
+            <div class="btn_wrapper">
+              <button class="btn view_more_btn">
+                view Menu <i class="ri-arrow-right-line"></i>
+              </button>
+
+              <button class="btn documentation_btn">ORDER NOW</button>
+            </div>
+          </div>
+          <div class="grid-item-2">
+            <div class="team_img_wrapper">
+              <img src="https://img.freepik.com/free-vector/fast-food-set-with-hamburger-hotdog_1308-102865.jpg" alt="team-img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrapper">
+      <div class="container" data-aos="fade-up" data-aos-duration="1000">
+        <div class="grid-cols-3">
+          <div class="grid-col-item">
+            <div class="icon">
+
+              <img src="burger.png">
+
+
+            </div>
+            <div class="featured_info">
+              <span class="title">Burger </span>
+              <p>
+                Lamb Burger.<br>
+                Chicken Burger.<br>
+                Specialty Burger.<br>
+                Cheese Burger.<br>
+                Bacon Burger.<br>
+                Veggie Burger.<br>
+              </p>
+            </div>
+          </div>
+          <div class="grid-col-item">
+            <div class="icon">
+              
+
+
+              <img src="pizza.png">
+
+
+            </div>
+            <div class="featured_info">
+              <span class="title">Pizza</span>
+              <p>
+                Cheese Pizza.<br>
+                Veggie Pizza.<br>
+                Pepperoni Pizza.<br>
+                Meat Pizza.<br>
+                Margherita Pizza.<br>
+                BBQ Chicken Pizza.<br>
+
+              </p>
+            </div>
+          </div>
+
+          <div class="grid-col-item">
+            <div class="icon">
+              
+
+
+           <img src="fries.png">
+
+
+            </div>
+            <div  class="featured_info">
+              <span class="title">Fries</span>
+              <p>
+                Garlic Fries.<br>
+                Cheese Fries.<br>
+                Truffle Fries.<br>
+                Animal-Style Fries.<br>
+                Chili Cheese Fries.<br>               
+                Loaded French Fries.<br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer></footer>
+
+    <!-- ==== ANIMATE ON SCROLL JS CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ==== GSAP CDN ==== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <!-- ==== SCRIPT.JS ==== -->
+    <script src="./script.js" defer></script>
+  </body>
+</html>
