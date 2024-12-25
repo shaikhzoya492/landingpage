@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Order Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="orderstyle.css" />
+    <style>
+        body {
+            margin: 3em;
+        }
+        .card:hover {
+            border-color: #D12525;
+            box-shadow: 0 0 10px 2px #D12525;
+        }
+        .card {
+            transition: border-color 1s, box-shadow 0.5s;
+        }
+        img {
+            width: 100%; /* Make the image responsive */
+            height: auto;
+            border-radius: 2%;
+        }
+        @media screen and (min-width: 1040px) {
+            .container1{
+                width: 1040px;
+                margin: 0 auto;
+            }
+        }
+        .logo h2 {
+            font-size: 1.6rem; 
+            font-weight: bold;
+            color: #D12525; 
+            margin: 0;
+            padding: 0;
+        }
+        .card {
+            margin: 10px; /* Space between cards */
+            text-align: center; /* Center the card content */
+        }
+        .row {
+            display: flex; /* Flexbox layout for cards */
+            justify-content: space-between; /* Evenly space cards */
+        }
+        @media (max-width: 767px) {
+            .container1 {
+                margin-left: 0;
+                margin-right: 0;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav style="margin-bottom: 20px;">
+        <div class="logo container1">
+            <h2>Foodking <a href="index.html" style="font-weight: 450;font-size: large; margin-left: 400px; text-decoration: none; color: gray;" onmouseover="this.style.color='#D12525'" 
+                onmouseout="this.style.color='gray'"> Home</a> <a href="#"  style="font-weight: 450;font-size: large; margin-left: 80px; text-decoration: none; color: gray;" onmouseover="this.style.color='#D12525'" 
+                onmouseout="this.style.color='gray'">About</a><a href="#"  style="font-weight: 450;font-size: large; margin-left: 80px; text-decoration: none; color: gray;" onmouseover="this.style.color='#D12525'" 
+                onmouseout="this.style.color='gray'">Service</a><a href="#"  style="font-weight: 450;font-size: large; margin-left: 80px; text-decoration: none; color: gray;" onmouseover="this.style.color='#D12525'" 
+                onmouseout="this.style.color='gray'">Contact</a></h2>
+        </div>
+    </nav>
+    <h1 style="margin-left: 80px; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight: 700; margin-top: 40px; margin-bottom: 20px;">Burgers</h1>
+    
+    <!-- Page Content -->
+    <section class="container1">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="card" style="width: 100%; text-align: center; margin: 10px;">
+                    <img src="2veg.jpg" class="card-img-top" alt="burger">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: bold;font-size: medium;">2 Veg Krispers Meal
+                            <br><br> Rs.249
+                        </h5>
+                        <p class="card-text " style="margin-right: auto; margin-left: 2px; margin-bottom: 10px; max-width: 90%; color:gray;">
+                            2 veg value burgers, crispy medium fries & 2 delicious dips (20 gm each) at a deal price
+                        </p>
+                        <a href="#" class="btn btn-primary" style="background-color: #D12525; margin-bottom: 15px; border-color: #D12525;"> <i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="card" style="width: 100%; text-align: center; margin: 10px;">
+                    <img src="mexican_burger.jpg" class="card-img-top" alt="burger">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: bold; font-size: medium;">Mexican Zinger Pro Burger  <br><br> Rs.279</h5>
+                        <p class="card-text" style="margin-right: auto; margin-left: 2px; margin-bottom: 10px; max-width: 90%;color:gray;">
+                            Premium burger with crunchy chicken, Mexican Habanero sauce, cheese, tomato & onion
+                        </p>
+                        <a href="#" class="btn btn-primary" style="background-color: #D12525; margin-bottom: 15px; border-color: #D12525;"> <i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="card" style="width: 100%; text-align: center; margin: 10px;">
+                    <img src="indian_paneer_burger.jpg" class="card-img-top" alt="burger">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: bold; font-size: medium;">Indian Paneer Zinger Burger <br><br> Rs.299</h5>
+                        <p class="card-text" style="margin-right: auto; margin-left: 2px; margin-bottom: 10px; max-width: 90%; color:gray;">
+                            Signature burger with a crunchy chicken fillet, cheese slice, veggies & a delicious mayo sauce
+                        </p>
+                        <a href="#" class="btn btn-primary" style="background-color: #D12525; margin-bottom: 15px; border-color: #D12525;"> <i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="card" style="width: 100%; text-align: center; margin: 10px;">
+                    <img src="tandoori.jpg" class="card-img-top" alt="burger">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: bold; font-size: medium;">Indian Tandoori Zinger Burger  <br><br> Rs.269</h5>
+                        <p class="card-text" style="margin-right: auto; margin-left: 2px; margin-bottom: 10px; max-width: 90%; color:gray;">
+                            Chicken zinger with aádelicious tandoori sauce & cheese slice enjoy the burger 
+                        </p>
+                        <a href="#" class="btn btn-primary" style="background-color: #D12525; margin-bottom: 15px; border-color: #D12525;"> <i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+       
+
+   
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="card" style="width: 100%; text-align: center; margin: 10px;">
+                    <img src="american.jpg" class="card-img-top" alt="burger">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: bold; font-size: medium;">American Classic Zinger  <br><br> Rs.301</h5>
+                        <p class="card-text" style="margin-right: auto; margin-left: 2px; margin-bottom: 10px; max-width: 90%; color:gray;">
+                            Signature burger with a crunchy chicken fillet, cheese slice, veggies & a delicious mayo sauce
+                        </p>
+                        <a href="#" class="btn btn-primary" style="background-color: #D12525; margin-bottom: 15px; border-color: #D12525;"> <i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="card" style="width: 100%; text-align: center; margin: 10px;">
+                    <img src="2chicken.jpg" class="card-img-top" alt="burger">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: bold; font-size: medium;">2 Chicken Krisper Burgers  <br><br> Rs.199</h5>
+                        <p class="card-text" style="margin-right: auto; margin-left: 2px; margin-bottom: 10px; max-width: 90%; color:gray;">
+                            2 delicious chicken value burgers - at a deal price enjoy the burger with your love once
+                        </p>
+                        <a href="#" class="btn btn-primary" style="background-color: #D12525; margin-bottom: 15px; border-color: #D12525;"> <i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="card" style="width: 100%; text-align: center; margin: 10px;">
+                    <img src="cribbean.jpg" class="card-img-top" alt="burger">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: bold; font-size: medium;">Caribbean Spicy Chicken
+                        <br> <br>Rs.350</h5>
+                        <p class="card-text" style="margin-right: auto; margin-left: 2px; margin-bottom: 10px; max-width: 90%; color:gray;">
+                            New Caribbean Spicy Zinger Burger with 1 Pc Hot & Crispy and Pepsi PET 475ml at a deal price
+                        </p>
+                        <a href="#" class="btn btn-primary" style="background-color: #D12525; margin-bottom: 15px; border-color: #D12525;"> <i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="card" style="width: 100%; text-align: center; margin: 10px;">
+                    <img src="spicy_burger.jpg" class="card-img-top" alt="burger">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: bold; font-size: medium;">Chicken & Krispers Combo<br><br>
+                        Rs.230</h5>
+                        <p class="card-text" style="margin-right: auto; margin-left: 2px; margin-bottom: 10px; max-width: 90%; color:gray;">
+                            Deal of 2 chicken value burgers, 2 Hot & Crispy, 2 dips (20gm each) & 1 Pepsi 475ml
+                        </p>
+                        <a href="#" class="btn btn-primary" style="background-color: #D12525; margin-bottom: 15px; border-color: #D12525;"> <i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="card" style="width: 100%; text-align: center; margin: 10px;">
+                    <img src="spicy_burger.jpg" class="card-img-top" alt="burger">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: bold; font-size: medium;">Chicken & Krispers Combo<br><br>
+                        Rs.230</h5>
+                        <p class="card-text" style="margin-right: auto; margin-left: 2px; margin-bottom: 10px; max-width: 90%; color:gray;">
+                            Deal of 2 chicken value burgers, 2 Hot & Crispy, 2 dips (20gm each) & 1 Pepsi 475ml
+                        </p>
+                        <a href="#" class="btn btn-primary" style="background-color: #D12525; margin-bottom: 15px; border-color: #D12525;"> <i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <h1 style="margin-left: 80px; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight: 700; margin-top: 40px; margin-bottom: 20px;">Box Meals</h1>
+    
+    <!-- Page Content -->
+    <section class="container1">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="card" style="width: 100%; text-align: center; margin: 10px;">
+                    <img src="box1.jpg" class="card-img-top" alt="burger">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: bold;font-size: medium;">All Chicken Box
+                            <br><br> Rs.231</h5>
+                        <p class="card-text " style="margin-right: auto; margin-left: 2px; margin-bottom: 10px; max-width: 90%; color:gray;">
+                            2 veg value burgers, crispy medium fries & 2 delicious dips (20 gm each) at a deal price
+                        </p>
+                        <a href="#" class="btn btn-primary" style=" background-color: #D12525; margin-bottom: 15px; border-color: #D12525;"> <i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="card" style="width: 100%; text-align: center; margin: 10px;">
+                    <img src="box2.jpg" class="card-img-top" alt="burger">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: bold; font-size: medium;">Zinger Tandoori Box <br><br> Rs.313</h5>
+                        <p class="card-text" style="margin-right: auto; margin-left: 2px; margin-bottom: 10px; max-width: 90%;color:gray;">
+                            A deal for Tandoori lovers : Get 1 Tandoori Zinger, 2 Hot Wings, 1 Veg Patty & 1 Pepsi 475ml
+                        </p>
+                        <a href="#" class="btn btn-primary" style="background-color: #D12525; margin-bottom: 15px; border-color: #D12525;"> <i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="card" style="width: 100%; text-align: center; margin: 10px;">
+                    <img src="box3.jpg" class="card-img-top" alt="burger">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: bold; font-size: medium;">Veg Zinger Box <br><br> Rs.189</h5>
+                        <p class="card-text" style="margin-right: auto; margin-left: 2px; margin-bottom: 10px; max-width: 90%; color:gray;">
+                            A Box with your favorites! Get 1 pc Hot & Crispy, 2 Hot Wings & 1 Chicken Strip at a deal price
+                        </p>
+                        <a href="#" class="btn btn-primary" style="background-color: #D12525; margin-bottom: 15px; border-color: #D12525;"> <i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+</div>
+</section>
+
+    <h1 style="margin-left: 80px; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight: 700; margin-top: 40px; margin-bottom: 20px;">Rice Bowlz</h1>
+    
+    <!-- Page Content -->
+    <section class="container1">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="card" style="width: 100%; text-align: center; margin: 10px;">
+                    <img src="rice1.jpg" class="card-img-top" alt="burger">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: bold;font-size: medium;">Popcorn Chicken Rice Bowlz
+                            <br><br> Rs.229
+                        </h5>
+                        <p class="card-text " style="margin-right: auto; margin-left: 2px; margin-bottom: 10px; max-width: 90%; color:gray;">
+                            Rice Bowlz Attack!- Grab this aromatic Rice Bowlz with chicken popcorn & gravy!
+                        </p>
+                        <a href="#" class="btn btn-primary" style=" background-color: #D12525; margin-bottom: 15px; border-color: #D12525;"> <i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="card" style="width: 100%; text-align: center; margin: 10px;">
+                    <img src="rice2.jpg" class="card-img-top" alt="burger">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: bold; font-size: medium;">Veg Rice Bowlz  <br><br> Rs.199</h5>
+                        <p class="card-text" style="margin-right: auto; margin-left: 2px; margin-bottom: 10px; max-width: 90%;color:gray;">
+                            Rice Bowlz Attack!- Grab this aromatic Rice Bowlz with gravy now! order and enjoy
+                        </p>
+                        <a href="#" class="btn btn-primary" style="background-color: #D12525; margin-bottom: 15px; border-color: #D12525;"> <i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="card" style="width: 100%; text-align: center; margin: 10px;">
+                    <img src="rice3.jpg" class="card-img-top" alt="burger">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: bold; font-size: medium;">Classic Chicken Rice Bowlz <br><br> Rs.229</h5>
+                        <p class="card-text" style="margin-right: auto; margin-left: 2px; margin-bottom: 10px; max-width: 90%; color:gray;">
+                            Rice Bowlz Attack!- Grab this aromatic Rice Bowlz rice with 1 piece Hot & Cripsy & gravy
+                        </p>
+                        <a href="#" class="btn btn-primary" style="background-color: #D12525; margin-bottom: 15px; border-color: #D12525;"> <i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </section>
+
+            <h1 style="margin-left: 80px; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight: 700; margin-top: 40px; margin-bottom: 20px;">Chicken Rolls</h1>
+            <section class="container1">
+                <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="card" style="width: 100%; text-align: center; margin: 10px;">
+                    <img src="roll1.jpg" class="card-img-top" alt="burger">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: bold; font-size: medium;">Classic Chicken Roll & Pepsi  <br><br> Rs.219</h5>
+                        <p class="card-text" style="margin-right: auto; margin-left: 2px; margin-bottom: 10px; max-width: 90%; color:gray;">
+                            Chicken zinger with aádelicious tandoori sauce & cheese slice enjoy the burger 
+                        </p>
+                        <a href="#" class="btn btn-primary" style="background-color: #D12525; margin-bottom: 15px; border-color: #D12525;"> <i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+       
+
+   
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="card" style="width: 100%; text-align: center; margin: 10px;">
+                    <img src="roll2.jpg" class="card-img-top" alt="burger">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: bold; font-size: medium;">Double Chicken Roll & Pepsi  <br><br> Rs.359</h5>
+                        <p class="card-text" style="margin-right: auto; margin-left: 2px; margin-bottom: 10px; max-width: 90%; color:gray;">
+                            Signature burger with a crunchy chicken fillet, cheese slice, veggies & a delicious mayo sauce
+                        </p>
+                        <a href="#" class="btn btn-primary" style="background-color: #D12525; margin-bottom: 15px; border-color: #D12525;"> <i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="card" style="width: 100%; text-align: center; margin: 10px;">
+                    <img src="roll3.jpg" class="card-img-top" alt="burger">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: bold; font-size: medium;">Classic Chicken Roll Meal   <br><br> Rs.199</h5>
+                        <p class="card-text" style="margin-right: auto; margin-left: 2px; margin-bottom: 10px; max-width: 90%; color:gray;">
+                            2 delicious chicken value burgers - at a deal price enjoy the burger with your love once
+                        </p>
+                        <a href="#" class="btn btn-primary" style="background-color: #D12525; margin-bottom: 15px; border-color: #D12525;"> <i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="card" style="width: 100%; text-align: center; margin: 10px;">
+                    <img src="roll4.jpg" class="card-img-top" alt="burger">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: bold; font-size: medium;">Classic Chicken Roll
+                        <br> <br>Rs.350</h5>
+                        <p class="card-text" style="margin-right: auto; margin-left: 2px; margin-bottom: 10px; max-width: 90%; color:gray;">
+                            New Caribbean Spicy Zinger Burger with 1 Pc Hot & Crispy and Pepsi PET 475ml at a deal price
+                        </p>
+                        <a href="#" class="btn btn-primary" style="background-color: #D12525; margin-bottom: 15px; border-color: #D12525;"> <i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="card" style="width: 100%; text-align: center; margin: 10px;">
+                    <img src="roll5.jpg" class="card-img-top" alt="burger">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: bold; font-size: medium;">Classic Chicken Roll Meal for 2<br><br>
+                        Rs.230</h5>
+                        <p class="card-text" style="margin-right: auto; margin-left: 2px; margin-bottom: 10px; max-width: 90%; color:gray;">
+                            Deal of 2 chicken value burgers, 2 Hot & Crispy, 2 dips (20gm each) & 1 Pepsi 475ml
+                        </p>
+                        <a href="#" class="btn btn-primary" style="background-color: #D12525; margin-bottom: 15px; border-color: #D12525;"> <i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="card" style="width: 100%; text-align: center; margin: 10px;">
+                    <img src="roll6.jpg" class="card-img-top" alt="burger">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: bold; font-size: medium;">Chicken & Krispers Combo   <br><br>
+                        Rs.230</h5>
+                        <p class="card-text" style="margin-right: auto; margin-left: 2px; margin-bottom: 10px; max-width: 90%; color:gray;">
+                            Deal of 2 chicken value burgers, 2 Hot & Crispy, 2 dips (20gm each) & 1 Pepsi 475ml
+                        </p>
+                        <a href="#" class="btn btn-primary" style="background-color: #D12525; margin-bottom: 15px; border-color: #D12525;"> <i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
